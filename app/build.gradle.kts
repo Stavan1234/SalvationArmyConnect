@@ -52,6 +52,8 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation("androidx.compose.material:material-icons-extended")
+
 
     // Testing
     testImplementation(libs.junit)
@@ -63,11 +65,11 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // --- FIREBASE DEPENDENCIES (Fixed) ---
-    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
+    implementation(platform("com.google.firebase:firebase-bom:34.7.0"))
     implementation("com.google.firebase:firebase-analytics")
     // This is the key line you were missing for Login:
     implementation("com.google.firebase:firebase-auth")
-    implementation("com.google.android.gms:play-services-auth:21.0.0")
-    implementation("com.google.code.gson:gson:2.10.1")
+    implementation("com.google.android.gms:play-services-auth:21.5.0")
+    implementation("com.google.code.gson:gson:2.13.2")
 
 }
